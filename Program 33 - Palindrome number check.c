@@ -11,7 +11,7 @@ int main()
 {
     unsigned int num; int rem, original, reversed=0;
     printf("\nEnter a number: ");
-    scanf("%d", &num);
+    scanf("%u", &num);
     original=num;
     
     while(num!=0)
