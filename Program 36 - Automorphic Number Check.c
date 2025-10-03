@@ -8,7 +8,7 @@ Example: 25² = 625 (ends with 25)
 
 int main()
 {
-    int num, temp, d=1, sq;
+    unsigned int num, temp, d=1, sq;
     printf("\nEnter a positive integer: ");
     scanf("%u", &num);
     temp=num;
