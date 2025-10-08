@@ -18,7 +18,7 @@ int main()
         {
             factorial*=i;
         }
-        printf("\nFactorial = %d", factorial);
+        printf("\nFactorial = %u", factorial);
     }
     return 0;
 }
