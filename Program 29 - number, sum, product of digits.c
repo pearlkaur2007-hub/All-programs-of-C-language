@@ -19,8 +19,9 @@ int main()
         prod*=digits;
         printf("\n%d", digits);
     }
-    printf("\n sum=%d", sum);
-    printf("\n prod=%d", prod);
-    printf("\n No. of digits of the number is %d", c);
+    printf("\n sum=%u", sum);
+    printf("\n prod=%u", prod);
+    printf("\n No. of digits of the number is %u", c);
     return 0;
 }
+
