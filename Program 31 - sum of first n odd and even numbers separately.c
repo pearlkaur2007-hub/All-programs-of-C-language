@@ -8,16 +8,17 @@ int main()
 {
     unsigned int num; int i, sum=0, sum1=0;
     printf("\nEnter a number: ");
-    scanf("%d", &num);
+    scanf("%u", &num);
     for(i=1;i<=num;i+=2)
     {
         sum+=i;
     }
-    printf("\n Sum of odd numbers = %d", sum);
+    printf("\n Sum of odd numbers = %u", sum);
     for(i=2;i<=num;i+=2)
     {
         sum1+=i;
     }
-    printf("\n Sum of even numbers = %d", sum1);
+    printf("\n Sum of even numbers = %u", sum1);
     return 0;
 }
+
