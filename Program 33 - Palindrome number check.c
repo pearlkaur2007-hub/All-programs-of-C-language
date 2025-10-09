@@ -22,11 +22,11 @@ int main()
     }
     if(original==reversed)
     {
-        printf("\n%d is a palindrome", original);
+        printf("\n%u is a palindrome", original);
     }
     else
     {
-        printf("\n%d is not a palindrome", original);
+        printf("\n%u is not a palindrome", original);
     }
 
     return 0;
