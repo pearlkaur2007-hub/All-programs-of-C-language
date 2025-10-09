@@ -16,7 +16,7 @@ int main()
     
     if(num/1000==0)
     {
-        printf("\n%d is a three digit number", num);
+        printf("\n%u is a three digit number", num);
         do
         {
             digit1=num%10;
@@ -26,17 +26,17 @@ int main()
             printf("\n%d", sum);
             if(sum==num)
             {
-                printf("\n %d is an Armstrong number.", num);
+                printf("\n %u is an Armstrong number.", num);
             }
             else
             {
-                printf("\n %d is not an Armstrong number.", num);
+                printf("\n %u is not an Armstrong number.", num);
             }
         }while(digit3==0);
     }
     else
     {
-        printf("\n%d is not a three digit number", num);
+        printf("\n%u is not a three digit number", num);
     }
     return 0;
 }
