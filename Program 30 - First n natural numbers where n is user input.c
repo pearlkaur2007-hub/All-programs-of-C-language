@@ -7,10 +7,11 @@ int main()
 {
     unsigned int num; int i;
     printf("\nEnter a natural number: ");
-    scanf("%d", &num);
+    scanf("%u", &num);
     for(i=num;i>0;--i)
     {
-        printf("\n %d", i);
+        printf("\n %u", i);
     }
     return 0;
 }
+
