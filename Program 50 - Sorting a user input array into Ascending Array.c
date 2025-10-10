@@ -5,20 +5,21 @@ using selection sort technique.
 
 #include <stdio.h>
 
-void bubbleSort(int arr[],int n)
+void selectionSort(int arr[],int n)
 {
     for(int i=0;i<n-1;++i)
     {
-        for(int j=0; j<n-i-1; j++)
+        int smallIdx=i;
+        for(int j=i+1; j<n; ++j)
         {
-            if(arr[j]>arr[j+1])
+            if(arr[j]<arr[smallIdx])
             {
-                arr[j]=arr[j]+arr[j+1];
-                arr[j+1]=arr[j]-arr[j+1];
-                arr[j]=arr[j]-arr[j+1];
+                smallIdx=j;
             }
-            
         }
+        int temp = arr[i];
+        arr[i] = arr[smallIdx];
+        arr[smallIdx] = temp;
     }
     
 }
@@ -33,10 +34,10 @@ int main()
         printf("\nThe arr[%d] : ", k);
         scanf("%d", &arr[k]);
     }
-    bubbleSort(arr,n);
+    selectionSort(arr,n);
     for(k=0; k<n; ++k)
     {
-        printf("\nElement [%d]= %d", k, arr[k]);
+        printf("%d\t", arr[k]);
     }
     return 0;
 }
