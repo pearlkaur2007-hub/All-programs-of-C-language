@@ -19,14 +19,14 @@ int main()
             sum+=i;
         }
     }
-    printf("\n Sum = %d", sum);
+    printf("\n Sum = %u", sum);
     if(sum==num)
     {
-        printf("\n%d is a perfect number.", num);
+        printf("\n%u is a perfect number.", num);
     }
     else
     {
-        printf("\n%d is not a perfect number.", num);
+        printf("\n%u is not a perfect number.", num);
     }
     return 0;
 }
