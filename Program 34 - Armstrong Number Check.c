@@ -14,7 +14,7 @@ int main()
     printf("\nEnter a number: ");
     scanf("%u", &num);
     
-    if(num/1000==0)
+    if(num/100!=0 && num<1000)
     {
         printf("\n%u is a three digit number", num);
         do
@@ -23,7 +23,7 @@ int main()
             digit2=(num%100)/10;
             digit3=num/100;
             sum=(digit1*digit1*digit1)+(digit2*digit2*digit2)+(digit3*digit3*digit3);
-            printf("\n%d", sum);
+            printf("\n%u", sum);
             if(sum==num)
             {
                 printf("\n %u is an Armstrong number.", num);
