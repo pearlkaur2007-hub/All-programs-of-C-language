@@ -6,17 +6,18 @@ Here, ‘n’ is user input.
 
 int main()
 {
-    int num, ser=1; int i=1;
+    unsigned int num, ser=1; int i=1;
     printf("\nEnter n which is the number of terms of a series: ");
-    scanf("%d", &num);
+    scanf("%u", &num);
     
     while
     (i<=num)
     {
-        printf("%d ", ser);
+        printf("%u ", ser);
         ser*=2;
         i<num;
         ++i;
     }
     return 0;
 }
+
