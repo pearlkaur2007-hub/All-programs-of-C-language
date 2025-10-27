@@ -1,9 +1,6 @@
 /******************************************************************************
-
 WAPC to input a character. Categorize it as either uppercase letter, 
 lowercase letter, number or any other miscellaneous symbol.
-
-
 *******************************************************************************/
 #include <stdio.h>
 
